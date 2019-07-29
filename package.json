@@ -1,0 +1,25 @@
+{
+  "name": "just_another_webpage",
+  "version": "1.0.0",
+  "description": "A nodejs application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanglingTreats/Node-App.git"
+  },
+  "author": "Edwin Tang <edwintang10@yahoo.com.sg>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanglingTreats/Node-App/issues"
+  },
+  "homepage": "https://github.com/TanglingTreats/Node-App#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
