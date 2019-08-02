@@ -9,11 +9,16 @@ var app = express();
 app.use(logger("dev"));
 
 //Serve static files
-app.use(express.static(path.join(__dirname, 'src')));
+app.use(express.static(path.join(__dirname, 'views')));
 
 //-------Routes--------
+//--Default Route--
+app.get('about', function(req, res) {
+    
+})
+
 app.get('/', function(req, res) {
-    res.render("index.html");
+    res.render("index.ejs");
 })
 
 app.get('*', function(req, res) {
@@ -21,5 +26,6 @@ app.get('*', function(req, res) {
 });
 
 
+//--express listening for http request at specified port--
 app.listen(port);
 console.log("Listening at " + serverUrl + ":" + port);
